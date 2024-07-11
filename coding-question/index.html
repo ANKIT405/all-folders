@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <script>
+      //duplicate element in array..
+      //          }
+
+      //     let arr=[1,2,8,2,6,8,4,4]
+      //     let storeDuplicate=[]
+
+      //     for(let i=0;i<arr.length;i++){
+      //          for(j=i+1;j<arr.length;j++){
+      //             arr[i]==arr[j]? storeDuplicate.push(arr[i]):"no task"
+      //     }
+      //  console.log("Repeated-values",storeDuplicate)
+      //---------------------------------------------------------------------------------
+
+      //How to find max and min value in array
+      // let arr=[5,8,7,6,2,1]
+
+      // let lessSmall=[]
+      // let minValue=arr[0]//5
+      // let maxValue=arr[0]//5
+
+      // for(j=0;j<arr.length;j++){
+
+      //      if(arr[j]>maxValue){
+      //          maxValue=arr[j]
+      //      }
+      //      if(arr[j]<minValue){
+      //         minValue=arr[j]
+      //      }
+
+      //     }
+
+      //     console.log(minValue,maxValue)
+
+      //find second largest value in array
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // let arr=[5,3,7,4,89,95,2,2,84]
+      // let largest=arr[0]//5 default
+
+      // for(i=0;i<arr.length;i++){
+      //     if(largest<arr[i]){
+      //         largest=arr[i]
+
+      //     }
+      //     if(arr.length-1==i){
+      //     for(j=0;j<arr.length;j++){
+      //         arr[j]==largest? delete arr[j]:"no task"
+
+      //     }
+      //     for(l=0;l<arr.length;l++){
+      //         if(arr[0]<arr[l]){
+      //         largest=arr[l]
+
+      //     }
+      //     }
+
+      //     }
+
+      // }
+
+      // arr[ arr.indexOf( Math.max(...arr))]=false
+
+      // console.log(Math.max(...arr))
+
+      //     let arr=[1,2,3,4,5,7,10]
+
+      //     let getmissing=[]
+      // let num=0
+      // for (let i = 0; i < arr[arr.length-1]; i++) {
+      //     num++
+      //     if(arr[i]!=num){
+      //         getmissing.push(num)
+
+      //     }
+      // }
+
+      // console.log("missingNumbers ",getmissing)
+
+      //---------------------------------------------------------------------
+
+      // //find Even and Odd
+      // let arr=[1,2,3,4,5,6,7,8,9,10]
+      // for(i=0;i<arr.length;i++){
+      //     if(arr[i]%2==0){
+      //        console.log("Even",arr[i])
+
+      //     }
+      //     if(arr[i]%2==1){
+      //        console.log("odd",arr[i])
+
+      //     }
+      // }
+
+      //find the sum of all element
+      // let sum=0
+      // for(i=0;i<arr.length;i++){
+      //   sum+=arr[i]
+      // }
+      // console.log(sum)
+
+      //find vowels from string
+      // let str="aelloworld"
+      // let arr=str.split("")
+      // let vowelCollector=[]
+      // let vowelAlpha="aeiou"
+      // let vowel=vowelAlpha.split("")
+      // for(i=0;i<vowel.length;i++){
+      //     for(j=0;j<arr.length;j++){
+      //         if(vowel[i]==arr[j]){
+      //     vowelCollector.push(arr[j])
+      // }
+      //     }
+      // }
+
+      // console.log(vowelCollector)
+
+      //Reverse a string
+      // let str="hello world"
+
+      // let storingReversed_str=""
+
+      // for(i=0;i<str.length;i++){
+      //     storingReversed_str+=str[str.length-1-i]
+      // }
+
+      // console.log(storingReversed_str)
+      //----------------------------------------====================================
+      //Find Palindrome in array
+
+      // let arr=["lool","loop","hug","poop","kook"]
+      // for(let i=0;i<arr.length;i++){
+      //    if(arr[i][0]==arr[i][arr[i].length-1]){
+      //     console.log(arr[i])
+      //    }
+      // }
+      //---------------------------------------========================================
+      //----------------------REPEAT PRACTICE-------------------------------------------
+      //Duplicate element in array
+      // let arr=[1,2,3,4,4,5,6,5,2,1] //out 2,4,5
+      // let storingRepeatedValue=[]
+      // for(let i=0;i<arr.length;i++){
+      //     for(let j=i+1;j<arr.length;j++){
+      //         if(arr[i]==arr[j]){
+      //      storingRepeatedValue.push(arr[i])
+
+      //         }
+      //     }
+      // }
+      // console.log(storingRepeatedValue)
+
+      //How to find max and min value in array
+      // let arr=[5,6,19,8,18,2,1]//19,1
+      // let storemin_max=[arr[0],arr[0]]//19,1
+      // for(let i=0;i<arr.length;i++){
+      //     if(storemin_max[0]<arr[i]){
+      //        `Maximum${storemin_max[0]=arr[i]}`
+      //     }
+      //     if(storemin_max[0]>arr[i]){
+      //         `Minimum ${storemin_max[1]=arr[i]}`
+      //     }
+      // }
+      // console.log(storemin_max)
+
+      //find second largest value in array
+      // let arr=[88,47,62,99,23,43,100,75,63]
+      // let storingSecondLarge=arr[0]
+      // let stopLoop=true
+      // function loop() {
+      // for(let i=0;i<arr.length;i++){
+
+      //     if(storingSecondLarge<arr[i]){
+      //        storingSecondLarge=arr[i]
+
+      //     }
+      //     if(arr.length-1==i&& stopLoop){
+      //     for (let j = 0; j < arr.length; j++) {
+      //        storingSecondLarge== arr[j]?delete arr[j]:"__"
+
+      //     }
+      //     stopLoop=false
+      //     storingSecondLarge=arr[0]
+      //     loop()
+
+      // }
+
+      // }
+
+      //  }
+      //  loop()
+      //  console.log(storingSecondLarge)
+
+      //find the missing number in array
+      // let arr=[1,2,3,4,5,8,10]
+      // let counter=0
+      // let missingNum=[]
+      // for(let i=0;i<arr[arr.length-1];i++){
+      //     counter++
+      //     if(arr[i]!=counter){
+      //         missingNum.push(counter)
+      //         counter=i+1
+
+      //     }
+
+      // }
+      // console.log(missingNum)
+
+      //find even or odd in array
+      // let arr=[1,2,3,4,5,6,7,8,9,10]
+
+      // for(let i=0;i<arr.length;i++){
+      //     arr[i]%2==0?console.log("EVEN :",arr[i]):console.log("ODD :",arr[i])
+      // }
+
+      //Find the sum of all Elements in array
+      // let arr=[1,2,3]
+      // let Allsum=0
+      // for(let i=0;i<arr.length;i++){
+      // Allsum+=arr[i]
+      // }
+      // console.log(Allsum)
+
+      //Find the vowels from string
+      // let str="hello world"
+      // let vowels="aeiou"
+      // let VowelCollector=[]
+      // for(let i=0;i<vowels.length;i++){
+      //     for(let j=0;j<str.length;j++){
+      //         str[j]==vowels[i]?VowelCollector.push(str[j]):"no task"
+      //     }
+      // }
+
+      // console.log(VowelCollector)
+
+      //Reverse a string
+
+      // let str="HELLO WORLD"
+      // let Reverse_str=""
+      // for(let i=str.length-1;i>=0;i--){
+      //     Reverse_str+=str[i]
+      // }
+
+      // console.log(Reverse_str)
+
+      //Find Palindrome in array
+
+      // let arr=["loop","lool","cool","kook"] //lool , kook
+
+      // for(let i=0;i<arr.length;i++){
+      //     arr[i][0]==arr[i][arr[i].length-1]?console.log(arr[i]):'not found palindrome string'
+      // }
+
+      //Print the multiplication table with 7
+
+      // for(let i=1;i<=10;i++){
+      //     console.log("7 X "+i+"= "+i*7)
+      // }
+
+      //Print all the multiplication tables with numbers from 1 to 10
+
+      // for(let i=1;i<=10;i++){
+      //     for(let j=1;j<=10;j++){
+      //       j==10?  console.log(i+" X "+j+" = "+i*j):console.log(i+" X "+j+" = "+i*j)
+      //     }
+      // }
+
+      // Calculate the sum of even numbers greater than 10 and less than 30
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      // let EvenSum=0
+      // for(let i=0;i<=32;i++){
+      //     if(i%2==0 && i>10 &&i<=29){
+      //         console.log(i)
+      //  EvenSum+=i
+      //     }
+      // }
+      // console.log(EvenSum)
+
+      //Destructuring Questions practice
+
+      //Write a function that takes an array of numbers as input and returns the minimum and maximum numbers using array destructuring. Output:{ min: 1, max: 9 }
+
+      // function MinMax(arr) {
+      //     let Min=arr[0]
+      //     let Max=arr[0]
+      //         for(let j=0;j<arr.length;j++){
+      //             if(Min>arr[j]){
+      //                Min=arr[j]
+      //             }
+      //             if(Max<arr[j]){
+      //                 Max=arr[j]
+      //             }
+      //         }
+
+      //     let obj={Min,Max}
+      //     return {Min:min,Max:max}=obj
+      // }
+      // console.log(MinMax([7,6,3,4,5,9,2,1]))
+
+      //Create a function that takes a user object as input and returns a greeting message using object destructuring.
+
+      // function Greeting(arr) {
+      //     let {name,age}=arr
+      //     return name+" your age is now "+age
+      // }
+
+      // console.log(Greeting({name:"Alice",age:30}))
+
+      //Hard Level Destructuring Questions
+      // const data = {
+      //   user: {
+      //     id: 1,
+      //     name: 'John',
+      //     email: 'john@example.com'
+      //   },
+      //   scores: [10, 20, 30, 40]
+      // };
+
+      // // Using destructuring and spread operator, extract user's id, name, and email from 'data'
+      // // and also, create a new array 'userDetails' which contains the id, name, and email in the same order.
+      // let {...user}=data.user
+      // let userDetails=[]
+      // for (key in user){
+      //    userDetails.push(user[key])
+      // }
+
+      // console.log(userDetails); // Output: [1, 'John', 'john@example.com']
+
+      // function mergeObjects(obj1, obj2) {
+      //   // Merge obj2 into obj1 using spread operator and return the merged object
+      //   let a =obj1.a
+
+      //   return {a,...obj2}
+      // }
+
+      // const obj1 = { a: 1, b: 2 };
+      // const obj2 = { b: 3, c: 4 };
+
+      // const mergedObj = mergeObjects(obj1, obj2);
+
+      // console.log(mergedObj); // Output: { a: 1, b: 3, c: 4 }
+
+      // const numbers = [1, 2, 3, 4, 5];
+      //  let arr=[,,...em1]=numbers
+      // let newNumbers=em1 //[3,4,5]
+      // // Using destructuring and spread operator, create a new array 'newNumbers'
+      // // that contains all elements of 'numbers' array except the first two elements.
+
+      // // Write your code here
+
+      // console.log(newNumbers); // Output: [3, 4, 5]
+
+      // let arr=["hello","i am","world"]
+      // let {1:str1,2:str3}=arr
+
+      // const person = {
+      //   name: 'Alice',
+      //   age: 30,
+      //   address: {
+      //     city: 'New York',
+      //     country: 'USA'
+      //   }
+      // };
+
+      // // Using destructuring and spread operator, create a new object 'newPerson'
+      // // that contains all properties of 'person' except the 'age' property.
+
+      // // Write your code here
+
+      // let address=person.address
+      // let {name}=person
+      // {name:Alice , address:{...}}
+      // let newPerson={name,address}
+      // Output: { name: 'Alice', address: { city: 'New York', country: 'USA' } }
+
+      // console.log(newPerson)
+
+      // function getFirstTwo([first, second, ...rest]) {
+      //     // Using destructuring and spread operator, return an array containing the first two elements of the input array
+      
+      // }
+
+      // const numbers = [1, 2, 3, 4, 5];
+      // const result = getFirstTwo(numbers);
+
+      // console.log(result); // Output: [1, 2]
+
+      // const data = {
+      //   user: {
+      //     id: 1,
+      //     name: 'John',
+      //     email: 'john@example.com'
+      //   },
+      //   scores: [10, 20, 30, 40]
+      // };
+
+      // // Using destructuring and spread operator, extract user's id, name, and email from 'data'
+      // // and create a new object 'userDetails' containing these properties.
+
+      // // Write your code here
+
+    
+
+      // console.log(userDetails); // Output: { id: 1, name: 'John', email: 'john@example.com' }
+
+      //Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz" outPut : 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, ...
+
+      
+// for(let i=1;i<=100;i++){
+  
+//    if(i%3==0){
+  
+//        delete i
+//        console.log("Fizz")
+//    }
+// else if(i%5==0){
+//        delete i
+//        console.log("Buzz")
+//    }
+// else if(i%3==0 && i%5==0){
+//         delete i
+//        console.log("FizzBuzz")
+//    }
+//    else{
+//        console.log(i)
+//    }
+
+      
+// }
+
+      //Write a function in JavaScript to rotate an array to the right by k steps, where k is a non-negative integer. For example, given the array [1, 2, 3, 4, 5] and k = 2, the function should modify the array to become [4, 5, 1, 2, 3].
+      // let k=2
+      // let arr=[1,2,3,4,5]//[4,5,1,2,3]
+      // function Rotate(array,k_step) {
+      //     for(let i=0;i<=k_step;i++){
+      //         array[array.length+i]=array[i]
+      //         delete array[i]
+      //     }
+
+      // const newArray = array.filter(Boolean);
+      // return newArray // Output: [4,5,1,2,3]
+      // }
+
+      // console.log(Rotate(arr,k))
+
+      //Write a function to reverse a subarray within an array. For example, given the array [1, 2, 3, 4, 5] and the range [2, 4], the function should reverse the elements in the range and return [1, 4, 3, 2, 5].
+
+      // function ReverseArray(arr,range) {
+
+      //     for(let i=0;i<arr.length;i++){
+      //           arr[i]==range[0]?arr[i]=range[1]:arr[i]==range[1]?arr[i]=range[0]:"no task"
+
+      //        }
+      //        return arr
+      // }
+      // let arr=[1,2,3,4,5]
+      // let range=[2,4]
+      //   let array=ReverseArray(arr,range)
+      // console.log(array)
+
+      // Write a function to find all the duplicate elements in an array. The function should return an array containing only the duplicate elements. For example, given the array [1, 2, 3, 2, 4, 5, 3], the function should return [2, 3].
+
+      // function Duplicate(arr){
+      //     let array=[]
+      //     for (let j = 0; j < arr.length; j++) {
+      //      for (let i = j+1; i < arr.length; i++) {
+
+      //         if(arr[j]==arr[i]){
+      //              array.push(arr[j])
+      //         }
+
+      //      }
+
+      //     }
+      //     return array
+      // }
+      // let print=Duplicate([1, 2, 3, 2, 4, 5, 3])
+      // console.log(print)
+
+      //Design a Class for a Bank Account with Deposit, Withdraw, and Display Balance Methods.
+      //Implement Account Number as an Instance Variable.
+      //OutPut: Account Number: 123456, Balance: 1300
+      // let push_Obj = 0;
+      // BankAccounts = [
+      //   /*{Acc:1254515,Bal:12546,Withdraw:100,Deposit:2000},{},{}*/
+      // ];
+      // class BankAccount {
+      //   AddBankAcc(Acc_No) {
+      //     BankAccounts[push_Obj++] = {
+      //       Acc: Acc_No,
+      //       Bal: 0,
+      //       Withdraw: 0,
+      //       Deposit: 0,
+      //     };
+      //   }
+
+      //   DepositFund(Acc, Deposit) {
+      //     BankAccounts.forEach((Obj) => {
+      //       if (Obj.Acc == Acc) {
+      //         Obj.Bal += Deposit;
+      //         console.log(Obj);
+      //         Obj.Deposit = Deposit;
+      //       }
+      //     });
+      //   }
+
+      //   WithdrawMoney(Acc, Withdraw) {
+      //     BankAccounts.forEach((Obj) => {
+      //       if (Obj.Acc == Acc && Obj.Bal > Withdraw) {
+      //         Obj.Bal -= Withdraw;
+      //         Obj.Withdraw = Withdraw;
+      //       } else if (Obj.Acc == Acc && Obj.Bal < Withdraw) {
+      //         console.log("Insufficient Balance in Your Account");
+      //       }
+      //     });
+      //   }
+
+      //   CheckBalance(Acc) {
+      //     BankAccounts.forEach((Obj) => {
+      //       if (Obj.Acc == Acc) {
+      //         console.log(Obj.Bal);
+      //       }
+      //     });
+      //   }
+      // }
+
+      // let BankAcc = new BankAccount();
+      // find missing number in unSorted Array
+      // let arr=[6,1,3,4,7,10,2,8,9]
+      // let sortArr=[]
+      // let max=arr[0]
+      // let missingNumber=""
+      // for(let i=0;i<arr.length;i++){
+      //   max<arr[i]?max=arr[i]:"no task"
+      // }
+
+      //   for(let idx=1;idx<=max;idx++){
+      //     for(let r=0;r<arr.length;r++){
+      //       if(arr[r]==idx){
+      //        sortArr[idx-1]=arr[r]
+
+      //       }
+
+      //     }
+      //   }
+
+      //   for (let f = 1; f <sortArr.length; f++) {
+      //     Boolean(sortArr[f-1])==false?missingNumber=f:""
+
+      //   }
+      //   console.log(missingNumber)
+
+      // find first pair whose sum is 0
+
+      //       let arr=[-5,-4,-3,-2,0,2,4,6,8]
+      // let pairs=[]
+
+      // let r=arr.length-1//8
+      // for(let i=0;i<arr.length;i++){
+
+      //         r--
+
+      //    if(arr[i]+arr[r]==0){
+
+      //         pairs[0]=arr[i]
+      //         pairs[1]=arr[r]
+      //         stopNow=false
+      //         break;
+      //     }
+      // }
+
+      // console.log(pairs)
+
+      //check the string Anagram or Not
+
+      // let user = "hello"; //h is remaining
+      // let user2 = "llleo"; //l is remaining
+      // let str_1 = [...user];
+      // let str_2 = [...user2];
+      // if (str_1.length == str_2.length) {
+      //   for (let i = 0; i < str_1.length; i++) {
+      //     for (let j = 0; j < str_2.length; j++) {
+      //       if (str_1[i] == str_2[j]) {
+      //         str_2[j] = "";
+      //         str_1[i] = "";
+      //       }
+      //     }
+      //   }
+      //   str_1.join("") == ""
+      //     ? console.log("This is Anagram")
+      //     : console.log("This is not Anagram");
+      // } else {
+      //   console.log("This is not a anagram");
+      // }
+
+      //find the reapeting elements in array using single loop
+      //      let arr=[1,2,2,3,4,4,5,5]
+      // let storing=arr[0]
+      // let repeatingEle=[]
+      // for(let i=1;i<arr.length;i++){
+      //     storing!=arr[i]?storing=arr[i]:storing==arr[i]?repeatingEle.push(arr[i]):"continue"
+      // }
+
+      // console.log(repeatingEle)
+
+      //find the unique elements in array out =[3,5,6,7]
+
+      // const array = [1, 2, 2, 1, 4, 4, 5, 6, 7, 8, 8,9,9,9]
+      // let unique=[...array]
+
+      // for(let i=0;i<array.length;i++){
+      //     for(let j=i+1;j<array.length;j++){
+      //         if(array[i]==array[j]) {
+      //           delete unique[i]
+      //           delete unique[j]
+
+      //         }
+      //     }
+      // }
+      // let result=unique.filter(Boolean)
+      // console.log(result)
+
+      //Largest sum of Consecutive Digits
+
+      // let arr = [1, 2, 3, 4, 3, 5, 4, 6, 7, 8];
+
+      // let max = 0;
+      // let num = 4;
+     
+      // for (let i = 0; i < arr.length - num + 1; i++) {
+      //   let tmp = 0;
+
+      //   for (let j = 0; j < num; j++) {
+      //     tmp += arr[i + j];
+      //     if (max < tmp) {
+      //       max = tmp;
+      //     }
+      //   }
+      // }
+        
+      // console.log(max);
+
+//  rotate the array out : [ [ 7, 4, 1 ], [ 8, 5, 2 ], [ 9, 6, 3 ] ]
+//       const array = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+// let output=[]
+// let n=-1
+// for(let i=array.length-1;i>=0;i--){
+// let tmp=[]
+// n++
+// for(let j=array.length-1;j>=0;j--){
+//  tmp.push(array[j][n])
+// }
+// output.push(tmp)
+// }
+// console.log(output)
+
+
+//Find the sum of all elements in a 2D array.
+// const array = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+// let sum=0
+// for(let i=0;i<array.length;i++){
+//   sum+=array[i][0]+array[i][1]+array[i][2]
+// }
+
+// console.log(sum)
+//------------------------------------------------------ seperate Question ----------------------------------------------------
+//✅Largest sum of Consecutive Digits let max=0; let tmp=0; arr[i+j];i=0;j<4 ; max<tmp?max=tmp;✅✅
+
+//✅find the unique elements in array out =[3,5,6,7]  //   arr[i]==clone[j]? delete clone[i],delete clone[j] ✅✅ inner loop let j=i+1
+
+//✅find the reapeting elements in array using single loop✅✅ //arr[i]==arr[i+1]?repeat.push(arr[i]) and for unsorted array: arr[i]==arr[j]?repeat.push(arr[i])
+
+//✅check the string Anagram or Not✅✅ first split by spread operator userInp2[i]==userInp[j] delete userInp[j] find and delete matched alphabet of main given string according to length 
+
+// ✅find first pair whose sum is 0 //let arr=[-5,-4,-3,-2,0,2,4,6,8]✅  arr[i]+arr[j]==0 stopNow=false 
+
+//✅find missing number in unSorted Array// let arr=[6,1,3,4,7,10,2,8,9]✅  unsortedArray elements plus (+=) 123..max=10 plus
+
+// ✅ Write a function to find all the duplicate elements in an array. The function should return an array containing only the duplicate elements. For example, given the array [1, 2, 3, 2, 4, 5, 3], the function should return [2, 3]. -->
+
+      
+ //✅ arr[i]==range[0]? arr[i]=range[1]:arr[i]==range[1]?arr[i]=range[0]:"end" Write a function to reverse a subarray within an array. For example, given the array [1, 2, 3, 4, 5] and the range [2, 4], the function should reverse the elements in the range and return [1, 4, 3, 2, 5].
+
+ // ✅✅i<=k {according to K step  pushing front element to right arr.push(arr[i])} {deleting front elements by k step delete [i] }  Write a function in JavaScript to rotate an array to the right by k steps, where k is a non-negative integer. For example, given the array [1, 2, 3, 4, 5] and k = 2, the function should modify the array to become [4, 5, 1, 2, 3].
+
+//✅✅ {i%3==0?delete [i] console.log(fizz): i%5==0? delete i console.log(Buzz)} Write a program that prints the numbers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz". For numbers which are multiples of both three and five print "FizzBuzz" outPut : 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14, FizzBuzz, ...
+
+// for(let i=1;i<=100;i++){
+//        if(i%5==0 && i%3==0){
+//         delete i
+//         console.log("FizzBuzz")
+//     }
+//    else if(i%3==0){
+//         delete i
+//         console.log("Fizz")
+//     }
+//     else if(i%5==0){
+//         delete i
+//         console.log("Buzz")
+//     }
+ 
+//     else{
+//         console.log(i)
+//     }
+        
+// }
+
+
+//-------------------------------------------------------------------------------
+  //✅✅ // const data = {
+      //   user: {
+      //     id: 1,
+      //     name: 'John',
+      //     email: 'john@example.com'
+      //   },
+      //   scores: [10, 20, 30, 40]
+      // };
+
+      // // Using destructuring and spread operator, extract user's id, name, and email from 'data'
+      // // and create a new object 'userDetails' containing these properties.
+
+      // // Write your code here
+
+      // console.log(userDetails); // Output: { id: 1, name: 'John', email: 'john@example.com' }
+//-----------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------
+
+      //✅✅ function getFirstTwo([first, second, ...rest]) {
+      //     // Using destructuring and spread operator, return an array containing the first two elements of the input array
+      
+      // }
+
+      // const numbers = [1, 2, 3, 4, 5];
+      // const result = getFirstTwo(numbers);
+
+      // console.log(result); // Output: [1, 2]
+//--------------------------------------------------------------------------------------
+  //✅ const person = {
+      //   name: 'Alice',
+      //   age: 30,
+      //   address: {
+      //     city: 'New York',
+      //     country: 'USA'
+      //   }
+      // };
+
+      // Using destructuring and spread operator, create a new object 'newPerson'
+      // that contains all properties of 'person' except the 'age' property.
+     // console.log(userDetails); // Output: { id: 1, name: 'John', email: 'john@example.com' }
+//----------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------
+  //✅const numbers = [1, 2, 3, 4, 5];
+// Using destructuring and spread operator, create a new array 'newNumbers'
+ // that contains all elements of 'numbers' array except the first two elements.
+//------------------------------------------------------------------------------------------     
+//----------------------------------------------------------------------------------------------
+    // function mergeObjects(obj1, obj2) {
+      //   // Merge obj2 into obj1 using spread operator and return the merged object
+      //  
+      // }
+      
+      // const mergedObj = mergeObjects(obj1, obj2);
+
+      // console.log(mergedObj); // Output: { a: 1, b: 3, c: 4 }
+      //--------------------------------------------------------------------------
+           //✅✅ const data = {
+      //   user: {
+      //     id: 1,
+      //     name: 'John',
+      //     email: 'john@example.com'
+      //   },
+      //   scores: [10, 20, 30, 40]
+      // };
+
+      // // Using destructuring and spread operator, extract user's id, name, and email from 'data'
+      // // and also, create a new array 'userDetails' which contains the id, name, and email in the same order.
+      // console.log(userDetails); // Output: [1, 'John', 'john@example.com']
+      //--------------------------------------------------------------------------------------------
+      // ✅✅Write a function that takes an array of numbers as input and returns the minimum and maximum numbers using array destructuring. Output:{ min: 1, max: 9 }
+      //-------------------------------------------------------------------------------------------------------------------------
+
+    //✅✅ Calculate the sum of even numbers greater than 10 and less than 30
+
+    //✅✅ Print all the multiplication tables with numbers from 1 to 10
+
+    //✅✅Find Palindrome in array let arr=["loop","lool","cool","kook"] //lool , kook
+
+    //✅✅Reverse a string // let str="HELLO WORLD"
+
+//✅✅Find the vowels from string // let str="hello world"
+//✅find Even and Odd
+//✅Find the sum of all Elements in array
+//✅✅sort Array without making new Array [40,30,12,25]
+// let arr=[40,30,12,25]
+// for(let i=0;i<arr.length;i++){
+//     for(let j=i+1;j<=arr.length;j++){
+//         if(arr[i]>arr[j]){
+//             let temp=arr[i]
+//             arr[i]=arr[j]
+//             arr[j]=temp
+//         }
+//     } //Reverse a string // let str="HELLO WORLD"
+// }
+
+// console.log(arr)
+
+//✅✅find second largest value in array
+// let arr=[7,4,8,1,5,9,2,6,3,54]
+// for(let i=0;i<arr.length;i++){
+//     for(let j=i+1;j<arr.length;j++){
+//         if(arr[i]<arr[j]){
+//             let tmp=arr[j]
+//             arr[j]=arr[i]
+//             arr[i]=tmp
+//         }
+//     }
+// }
+
+// console.log(arr[1])
+//✅How to find max and min value in array// let arr=[5,8,7,6,2,1]
+//✅ duplicate element in array..
+//❌reverse an array without making new array
+//Design a Class for a Bank Account with Deposit, Withdraw, and Display Balance Methods.
+//Implement Account Number as an Instance Variable.
+//OutPut: Account Number: 123456, Balance: 1300
+//===============================================================================
+// function MinMax([min,...middle]) {
+//          let m=min
+//          let max=middle[middle.length-1]
+//          return m+" "+max
+// }
+// let r=  MinMax([1,2,3,4,5])
+// console.log(r)
+
+// function name(...rest){
+//   console.log(rest)//[1,2,3]
+
+// }
+// name(1,2,3)
+
+
+async function fetching(){
+         let data=await fetch("https://picsum.photos/v2/list")
+         return data.json()
+}
+fetching().then((res)=>{
+  console.log(res)
+  for (let i = 0; i < res.length; i++) {
+ let h1=   document.createElement("h1")
+ 
+    document.getElementsByTagName("body")[0].append(  h1 )
+    h1.innerText = res[i].author
+    
+  }
+})
+    </script>
+  </body>
+</html>
